@@ -3,9 +3,10 @@ import UserDetail from "../components/UserDetail";
 
 function mapStateToProps(state){
   return {
-    user:state.currentUser
+    //user:state.currentUser
+    users:state.users
   }
 }
-                     
-const UserDetailContainer = connect(mapStateToProps)(UserDetail); 
-export default UserDetailContainer 
+
+const UserDetailContainer = connect(mapStateToProps)(UserDetail);
+export default UserDetailContainer
